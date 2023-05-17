@@ -27,8 +27,8 @@ import {fadeIn,textVariant} from "../utils/motion"
 
 const About = () => {
   return (
-   <>
-   <motion.dev 
+   <div className="ml-12">
+   <motion.dev id="about" 
    variants={textVariant()}>
     <p className={styles.sectionSubText}>Introduction</p>
     <h2 className={styles.sectionHeadText}>OverView.</h2>
@@ -44,7 +44,7 @@ work together to bring your ideas to life!
     })}
 
    </div>
-   </>
+   </div>
   )
 }
 

@@ -14,7 +14,7 @@ const ProjectCard=({index,name,description,tags,image,source_code_link}) =>{
     setModalOn(true)
   }
   return(
-    <motion.div variants={fadeIn("up","spring",index*0.5,0.75)} 
+    <motion.div  variants={fadeIn("up","spring",index*0.5,0.75)} 
    >
 <Tilt 
 options={{
@@ -71,8 +71,8 @@ className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full "
 
 const Works = () => {
   return (
-    <>
-    <motion.div variants={textVariant()}>
+    <div className="ml-12" >
+    <motion.div  id="projects" variants={textVariant()}>
       <p className={styles.sectionSubText}>
         My Work
       </p>
@@ -93,7 +93,7 @@ Following projects showcases my skills and experience through my last projects  
      )
     })}
   </div>
-    </>
+    </div>
   )
 }
 
